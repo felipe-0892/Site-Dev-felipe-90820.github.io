@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #3d3d3d;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+.limitar-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #d5d5d5;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+    flex-flow: row nowrap;
+}
+
+.titulo {
+    margin: 0 40px 0 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.titulo span {
+    color: #6592c9;
+}
+
+.link {
+    text-transform: uppercase;
+    line-height: 18px;
+    text-decoration: none;
+    padding: 0px 15px 10px 15px;
+    color: #3d3d3d
+}
+
+.link:hover {
+    border-bottom: 3px solid #6592c9;
+}
+
+.titulo-site {
+    margin-top: 60px;
+    background-image: url("assets/img-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-site-descricao {
+    color: #fff;
+    font-size: 28px;
+    background-color: #0a9077b3;
+    border: 1px solid;
+    padding: 0 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.titulo-site-descricao p {
+    font-size: 20px;
+}
+
+.titulo-box {
+    text-align: center;
+    padding: 40px;
+}
+
+.titulo-box h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.quartos {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.quarto {
+    margin-right: 10px;
+}
+
+a.quarto {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00836a;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.quarto:last-child {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.descricoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.descricao {
+    display: flex;
+    width: 45%;
+    margin: 0 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@media (max-width: 460px) {
+    .descricao {
+        width: 100%;
+    }
+}
+
+.descricao-img {
+    width: 100px;
+    height: 113px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #49997d;
+    color: #fff;
+}
+
+.footer-icone {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-copright {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topo-quartos {
+    height: 20vh;
+}
+
+.quartos-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.quartos-info h3 {
+    text-align: center;
+}
+
+.quartos-info ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*margin: 0px 20px 50px 10px;*/
+}
+
+.quartos-info ul li {
+    font-size: 18px;
+    width: 25%;
+    margin: 0px 20px 25px 10px;
+}
+
+.fotos-quartos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.foto-quarto {
+    width: 33%;
+    display: flex;
+}
+
+@media(max-width:600px) {
+    .foto-quarto {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .quartos-info ul {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>easter egg</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h1>Já que chegou até o easter egg responda esse formulário.</h1>
+
+        <fieldset class="conta">
+            <legend>Conta:</legend>
+            <div>
+                <label for="">E-mail:</label>
+                <input type="email" name="conta-email" id="" minlength="5" maxlength="250" required>
+            </div>
+            <div>
+                <label for="">Senha:</label>
+                <input type="password" name="conta-senha" id="" minlength="5" maxlength="25" required>
+            </div>
+        </fieldset>
+        <fieldset class="dadosPessoais">
+            <legend>Dado Pessoais:</legend>
+            <div>
+                <label for="">Nome:</label>
+                <input type="text" name="pessoal-nome" id="" required>
+            </div>
+            <div>
+                <label for="">Telefone:</label>
+                <input type="tel" name="pessoal-telefone" placeholder="(99)99999-9999" id="" required>
+            </div>
+            <div>
+                <label for="">Sexo:</label>
+                <label for="">Masculino:</label>
+                <input type="radio" value="masculino" name="pessoal-sexo" checked required>
+
+                <label for="">Feminino:</label>
+                <input type="radio" value="feminino" name="pessoal-sexo">
+            </div>
+            <div>
+                <label for="">Data de nascimento:</label>
+                <input type="text" placeholder="Ex:aa/aa/aaaa" name="pessoal-data-nascismento" required>
+            </div>
+            <div>
+                <label for="">Foto de Perfil:</label>
+                <input type="file" accept="mime" name="pessoal-imagem" id="" required>
+            </div>
+        </fieldset>
+        <fieldset class="endereco">
+            <legend>Endereço:</legend>
+            <div>
+                <label for="">Rua:</label>
+                <input type="text" name="endereco-rua" placeholder="Ex: Rua B" required>
+            </div>
+            <div>
+                <label for="">Complemento:</label>
+                <input type="text" name="endereco-complemento" placeholder="Ex: (casa , apt ...)" required>
+            </div>
+            <div>
+                <label for="">Número:</label>
+                <input type="number" name="endereco-numero" placeholder="Ex: 99999" minlength="3" maxlength="15" required>
+            </div>
+            <div>
+                <label for="">Cidade:</label>
+                <input type="text" name="endereco-cidade" placeholder="Ex: Rio do Tiête" required>
+            </div>
+            <div>
+                <label for="">Estado:</label>
+                <select name="endereco-estado" id="" required>
+                    <option value="Selecione sua opção">Selecione uma opção</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="anuncio">
+            <legend>Anúncio</legend>
+            <div>
+                <label for="">Conte como conheceu a Hello Pizza:</label>
+                <br>
+                <textarea name="anunicio-historia" placeholder="Conte-nos mais..." id="" cols="30" rows="10" minlength="20" maxlength="500" required></textarea>
+            </div>
+            <div>
+                <label for="">Desejo receber as promoções pelo E-mail</label>
+                <input type="checkbox" name="anuncio-marcacao" value="sim" id="" checked required>
+            </div>
+        </fieldset>
+        <fieldset class="finalizacao">
+            <legend>Finalização de cadastro</legend>
+            <input type="submit" value="Finalizar cadastro">
+
+        </fieldset>
+
+
+
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="limitar-container footer-container">
+            <div class="footer-infos">
+                <div class="footer-info">
+                    <h4>Entre em contato conosco:</h4>
+                </div>
+
+                <a class="footer-info footer-link" target="_blank" href="https://goo.gl/maps/wPAS58QxiTopxK6w7">
+                    <img class="footer-icone" src="assets/icones/endereco.png" alt="ícone endereco" title="ícone endereco" />
+
+                    <p>
+                        Endereçoo Av. 123, 222 - Rio de Janeiro RJ
+                    </p>
+                </a>
+
+                <a class="footer-info" href="tel:5521000000000">
+                    <img class="footer-icone" src="assets/icones/telefone.png" alt="ícone telefone" title="ícone telefone" />
+
+                    <p>
+                        Cel: 5521000000000
+                    </p>
+                </a>
+
+                <a class="footer-info footer-link" target="_blank" href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&">
+                    <img class="footer-icone" src="assets/icones/calendario.png" alt="ícone calendario" title="ícone calendario" />
+
+                    <p>
+                        Faça sua reserva pelo Booking.com
+                    </p>
+                </a>
+            </div>
+            <div class="footer-copright">
+                <a href="/indexhome.html">© Copyright - PousadaDev by Felipe</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
